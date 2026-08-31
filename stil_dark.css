@@ -1,0 +1,69 @@
+:root{
+    --bg-color: #f7e7c6;
+    --header-color: #d68e49;
+    --second-color: #a63725;
+    --text-color: #331e50;
+}
+.dark_mode{
+    --bg-color: #282328;
+    --header-color: #545c7e;
+    --second-color: #a369c5;
+    --text-color: #a3a29a;
+}
+html{
+    font-family: monospace;
+}
+body{
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+section{
+    display: grid;
+    grid-template-areas:
+    "a a a a a a a a b"
+    "c c c c c c c c d"
+}
+header{
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background-color: var(--header-color);
+}
+.button_box{
+    grid-area: b;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#theme_switch{
+    cursor: pointer;
+    height: 10rem;
+    width: 10rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-color);
+}
+#theme_switch svg{
+    fill: var(--bg-color)
+}
+#theme_switch svg:last-child{
+    display: none;
+}
+.dark_mode #theme_switch svg:first-child{
+    display: none;
+}
+.dark_mode #theme_switch svg:last-child{
+    display: block;
+}
+main{
+    grid-area: c;
+    padding: 1rem 5rem 1rem 5rem;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stil_dark.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Tamni način rada</h1>
+        </header>
+        <div class="button_box">
+            <button id="theme_switch">
+                <!-- Ikona za tamni način rada -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e3e3e3"><path d="M484-60q-88 0-165-33.5t-134.5-91Q127-242 93.5-319T60-484q0-158 103-276.5T420-907q-9 103 17 201.5T535-535q72 72 170 96.5T905-416q-26 153-144.5 254.5T484-60Z"/></svg>
+                <!-- Ikona za svijetli način rada -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e3e3e3"><path d="M417-785v-166h126v166H417Zm0 776v-166h126V-9H417Zm368-408v-126h166v126H785ZM9-417v-126h166v126H9Zm744-247-89-89 103-104 90 90-104 103ZM193-103l-90-90 104-103 89 89-103 104Zm574 0L664-207l89-89 104 103-90 90ZM207-664 103-767l90-90 103 104-89 89Zm103 354q-70-70-70-170t70-170q70-70 170-70t170 70q70 70 70 170t-70 170q-70 70-170 70t-170-70Z"/></svg>
+            </button>
+        </div>
+        <main>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et ante gravida, feugiat ligula quis, egestas quam. Vivamus non venenatis purus. Curabitur porta ligula eget arcu pharetra, ut semper libero facilisis. Fusce tortor arcu, congue eu sem eget, varius faucibus metus. Nullam id pharetra eros. Vestibulum vel est tortor. Cras ullamcorper, metus ac mollis egestas, felis dui porttitor ipsum, sed fermentum est nisi sit amet metus. Nullam suscipit est a ligula eleifend euismod. Vestibulum id facilisis lorem. Curabitur varius, est ac venenatis tristique, tortor ligula maximus nulla, nec pulvinar diam augue quis ligula. Ut pellentesque scelerisque scelerisque. Praesent metus urna, ultricies sed posuere eu, eleifend ac elit. Nulla id tortor id quam euismod bibendum. <br> <br> In purus nulla, consequat vel tellus id, aliquam malesuada nibh. Vestibulum a eros eu libero ultricies lobortis eu eu nisl. Vivamus tempus lectus non ipsum viverra porttitor. Vestibulum at tellus eget augue ultrices auctor et interdum est. Proin tincidunt libero sed maximus pulvinar. Vestibulum faucibus quis tortor a hendrerit. Curabitur sed augue eget neque commodo gravida. Curabitur risus ipsum, viverra nec velit eget, bibendum hendrerit leo. Nulla at consequat urna. Cras id nibh ut nisi viverra iaculis eget in nulla. <br> <br> Vestibulum tincidunt leo vitae eros lacinia commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium tincidunt urna a placerat. Curabitur molestie semper erat accumsan blandit. Suspendisse potenti. Curabitur fringilla volutpat lacus non convallis. Maecenas nisl neque, auctor at sodales vitae, euismod dapibus diam. <br> <br> Ut tincidunt ligula nisi, venenatis fermentum enim molestie at. Fusce blandit cursus ex, in euismod magna suscipit sit amet. Curabitur malesuada nec odio eu tempus. Mauris id interdum felis. Sed id purus efficitur nibh tincidunt consequat posuere at risus. Morbi et elit sed tellus malesuada placerat id consequat lacus. Ut nec libero efficitur, euismod mauris quis, feugiat nisi. Morbi mauris sapien, egestas eget sagittis non, pretium at sem. Nunc auctor et massa at pharetra. Sed tincidunt, enim ut commodo varius, massa metus imperdiet lectus, tempor feugiat dui nunc quis augue. Quisque vel scelerisque nulla. Quisque non augue urna. Suspendisse euismod nulla nec nisl consequat, vitae interdum velit ultricies. Aenean mauris libero, efficitur vitae nisl ac, ultricies mollis mi. Vestibulum sed eros nec lectus posuere hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            </p>
+        </main>
+    </section>
+    <script>
+        let is_dark_mode_enabled = false
+        const tSwitch = document.getElementById('theme_switch')
+        const enableDarkMode = function(){
+            document.body.classList.add('dark_mode')
+            is_dark_mode_enabled = true
+        }
+        const disableDarkMode = function(){
+            document.body.classList.remove('dark_mode')
+            is_dark_mode_enabled = false
+        }
+        tSwitch.addEventListener('click', function() {
+            if(is_dark_mode_enabled == false){
+                enableDarkMode()
+            }
+            else{
+                disableDarkMode()
+            }
+        })
+    </script>
+</body>
+
