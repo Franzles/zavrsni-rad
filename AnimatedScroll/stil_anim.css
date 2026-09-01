@@ -1,0 +1,68 @@
+body{
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    background-color: aliceblue;
+}
+section{
+    display: grid;
+    grid-template-areas:
+    "a a a"
+    "b c c"
+    "x x x"
+    "d d e"
+    "y y y"
+    "f g g";
+}
+header{
+    grid-area: a;
+    margin-bottom: 10rem;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(255, 227, 66);
+}
+#sun{
+    grid-area: b;
+}
+#emptySun{
+    grid-area: c;
+}
+#betweenSunBird{
+    grid-area: x;
+    min-height: 15rem;
+}
+#emptyBird{
+    grid-area: d;
+}
+#bird{
+    grid-area: e;
+}
+#betweenBirdGirl{
+    grid-area: y;
+    min-height: 15rem;
+}
+#girl{
+    grid-area: f;
+    transform: scale(-1, 1);
+}
+#emptyGirl{
+    grid-area: g;
+}
+
+/* Animacija: */
+.animated{
+    opacity: 0;
+    transition: opacity 1.2s ease, transform 1s ease;
+}
+#sun.animated, #girl.animated{
+    transform: translateX(-10rem);
+}
+#bird.animated{
+    transform: translateX(10rem);
+}
+#sun.animated.is_visible, #bird.animated.is_visible{
+    opacity: 1;
+    transform: translateX(0)
+}
+#girl.animated.is_visible{
+    opacity: 1;
+    transform: scale(-1, 1) translateX(0)
+}

@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(255, 241, 222);
+    color: rgb(119, 65, 0);
+}
+header{
+    text-align: center;
+    margin: 2rem;
+}
+h1{
+    font-size: xx-large;
+}
+section{
+    display: grid;
+    grid-template-areas:
+    "a b c d"
+    "e f g h";
+}
+figure{
+    padding: 2rem;
+    border-style: dotted;
+    border-radius: 2rem;
+}
+img{
+    max-width: 300px;
+    max-height: 300px;
+}
+figcaption{
+    text-align: center;
+}
+#english{
+    grid-area: a;
+}
+#math{
+    grid-area: b;
+}
+#biology{
+    grid-area: c;
+}
+#chemistry{
+    grid-area: d;
+}
+#geography{
+    grid-area: e;
+}
+#history{
+    grid-area: f;
+}
+#art{
+    grid-area: g;
+}
+#music{
+    grid-area: h;
+}

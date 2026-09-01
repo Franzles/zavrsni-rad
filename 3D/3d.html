@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrežna stranica sa 3D elementima</title>
+    <link rel="stylesheet" href="stil_3d.css">
+</head>
+<body>
+    <header><h1>Mrežna stranica sa 3D elementima</h1></header>
+    <!-- Ova stranica koristi Google-ov <model-viewer>: https://modelviewer.dev/ -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
+    <!-- modeli.glb napravljeni pomoću programa Blender -->
+    <model-viewer src="modeli.glb" 
+    camera-controls 
+    auto-rotate 
+    environment-image="neutral" 
+    exposure="0.5" 
+    shadow-intensity="1" 
+    shadow-softness="0.5"></model-viewer>
+</body>

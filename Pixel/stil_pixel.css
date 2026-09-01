@@ -1,0 +1,70 @@
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  background-color: rgb(36, 36, 36);
+  font-family: "Press Start 2P", monospace;
+  color:rgb(247, 247, 247);
+}
+#section1{
+    display: grid;
+    grid-template-areas:
+    "a a a a a a a a"
+    "b b b b b b b c"
+    "b b b b b b b d"
+    "b b b b b b b e";
+}
+header{
+  grid-area: a;
+  text-align: center;
+  font-size: x-large;
+}
+p{
+  font-size: larger;
+  border-style: solid;
+  border-width: 0.5rem;
+  padding: 1rem;
+}
+#score{
+  grid-area: c;
+  text-align: center;
+  font-size: large;
+  margin: 2rem;
+}
+#level{
+  grid-area: d;
+  text-align: center;
+  margin: 2rem;
+}
+figure{
+  grid-area: e;
+  text-align: center;
+  margin-top: 5rem;
+}
+figcaption{
+  margin: 1rem;
+}
+#section2{
+  grid-area: b;
+  border-style: solid;
+  border-width: 0.5rem;
+  display: grid;
+  grid-template-areas:
+  "A B B B"
+  "C C D E"
+  "F G G H"
+  "I J K K";
+}
+#T_shape{grid-area: A; margin-left: 3rem;}
+#empty1{grid-area: B;}
+#empty2{grid-area: C;}
+#Z_shape{grid-area: D;}
+#empty3{grid-area: E;}
+#L_shape{grid-area: F; margin-left: 3rem;}
+#empty4{grid-area: G;}
+#cube_shape{grid-area: H;}
+#empty5{grid-area: I;}
+#I_shape{grid-area: J;}
+#empty6{grid-area: K;}
