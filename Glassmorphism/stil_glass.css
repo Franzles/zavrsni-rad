@@ -2,8 +2,8 @@ html{
     font-family:'Times New Roman', Times, serif;
 }
 body{
-    /* Slika Magde Ehlers, pronađena na https://www.pexels.com */
-    background-image: url(https://images.pexels.com/photos/7762128/pexels-photo-7762128.jpeg);
+    /* Slika Magde Ehlers, pronađena na https://images.pexels.com/photos/7762128/pexels-photo-7762128.jpeg */
+    background-image: url(valovi.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
